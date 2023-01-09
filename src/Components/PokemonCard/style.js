@@ -2,14 +2,14 @@ import styled from 'styled-components'
 import { Link as ReactLink } from 'react-router-dom'
 
 
+
 export const CardContainer = styled.div`
     display:flex;
     flex-direction:column;
     width:400px;
     border-radius: 10px;
-    background-color:#729F92;
+    background-color:${props=> props.backgroundColor};
     margin-top: 32px;
-    margin-left: 12px;
 `
 export const CardBody = styled.div`
     display:flex;
@@ -29,11 +29,13 @@ export const CardDetails = styled.div`
             font-family:"Inter", sans-serif;
             font-size: 14px;
             font-weight:700;
+            
         }
 
         h2 {
             font-family:"Inter", sans-serif;
             font-size: 1.6rem;
+            text-transform: capitalize; //deixar a primeira letra maiuscula 
         }
     }
   

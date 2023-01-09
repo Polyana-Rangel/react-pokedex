@@ -15,25 +15,26 @@ import psychicImg from './Assets/Psychic.png'
 import rockImg from './Assets/Rock.png'
 import steelImg from './Assets/Steel.png'
 import waterImg from './Assets/Water.png'
+import bugImg from './Assets/bug.png'
 
 
   export const typeImages = {
-   
-    "Dark": darkImg,
-    "Dragon": dragonImg,
-    "Eletric": eletricImg,
-    "Fairy": fairyImg,
-    "Fighting": fightingImg,
-    "Fire": fireImg,
-    "Flying": flyingImg,
-    "Ghost": ghostImg,
+   "bug": bugImg,
+    "dark": darkImg,
+    "dragon": dragonImg,
+    "eletric": eletricImg,
+    "fairy": fairyImg,
+    "fighting": fightingImg,
+    "fire": fireImg,
+    "flying": flyingImg,
+    "ghost": ghostImg,
     "grass": grassImg,
-    "Ground": groundImg,
-    "Ice": iceImg,
-    "Normal": normalImg,
+    "ground": groundImg,
+    "ice": iceImg,
+    "normal": normalImg,
     "poison": poisonImg,
-    "Psychic": psychicImg,
-    "Rock": rockImg,
-    "Steel": steelImg,
-    "Water": waterImg
+    "psychic": psychicImg,
+    "rock": rockImg,
+    "steel": steelImg,
+    "water": waterImg
   }
