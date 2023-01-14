@@ -4,12 +4,12 @@ import { typeColor } from "../../colors"
 import backgroundImg from "../../Assets/Background.svg"
 import { useEffect, useState } from "react"
 import api from "../../Services/api"
+import { usePokemon } from "../../Contexts/pokedexContext"
 
-
-const PokemonCard = ({ name }) => {
+const PokemonCard = ({ name, showCapturarPokemon, showExcluirPokemon }) => {
   const [pokemon, setPokemon] = useState({})
   const [backgroundColor, setBackgroundColor] = useState(`#ffff`)
-
+  const { addToPokedex, removeToPokedex } = usePokemon()
 
   useEffect(() => {
     async function ConsumePokeApi() {
@@ -24,7 +24,6 @@ const PokemonCard = ({ name }) => {
 
     ConsumePokeApi()
   }, [])
-
 
   return pokemon && (
     <CardContainer backgroundColor={backgroundColor}>
@@ -53,8 +52,14 @@ const PokemonCard = ({ name }) => {
       </CardBody>
       <CardFooter>
         <Link to="/details">Detalhes</Link>
-        <button>Capturar!</button>
-
+        {showCapturarPokemon && (
+          <button className="capturar" onClick={()=> addToPokedex(name)}>Capturar!</button>
+          
+        )}
+        {showExcluirPokemon && (
+          <button className="excluir" onClick={()=> removeToPokedex(name)}>Excluir!</button>
+          
+        )}
       </CardFooter>
     </CardContainer>
 

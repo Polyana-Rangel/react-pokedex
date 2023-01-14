@@ -1,14 +1,13 @@
 import Router from "./Router/Router";
 import GlobalStyle from "./GlobalStyle";
+import { PokemonProvider } from "./Contexts/pokedexContext"
+
 function App() {
   return (
-   
-      
-      <>
-      <GlobalStyle/>
-      <Router/>
-      </>
-   
+    <PokemonProvider>
+      <GlobalStyle />
+      <Router />
+    </PokemonProvider>
   );
 }
 

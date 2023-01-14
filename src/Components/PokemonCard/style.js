@@ -1,14 +1,12 @@
 import styled from 'styled-components'
 import { Link as ReactLink } from 'react-router-dom'
 
-
-
 export const CardContainer = styled.div`
     display:flex;
     flex-direction:column;
     width:400px;
     border-radius: 10px;
-    background-color:${props=> props.backgroundColor};
+    background-color:${props => props.backgroundColor};
     margin-top: 32px;
 `
 export const CardBody = styled.div`
@@ -82,13 +80,23 @@ justify-content: space-between;
 padding: 0 14px 8px;
 margin-top: -38px;
 
-button{
+.capturar{
     border-radius: 4px;
     border:0;
     height: 32px;
     width: 124px;
     font-size: 14px;
     font-family: "Poppins",sans-serif;
+}
+.excluir{
+    border-radius: 4px;
+    border:0;
+    height: 32px;
+    width: 124px;
+    font-size: 14px;
+    font-family: "Poppins",sans-serif;
+    background-color: #FF6262;
+    color: white;
 }
 `
 
@@ -98,7 +106,6 @@ export const Link = styled(ReactLink)`
     color:white;
 
     :hover{
-                color: rgba(255, 255, 256, 0.7);
-
+        color: rgba(255, 255, 256, 0.7);
     }
 `
