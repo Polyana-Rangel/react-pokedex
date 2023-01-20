@@ -51,7 +51,7 @@ const PokemonCard = ({ name, showCapturarPokemon, showExcluirPokemon }) => {
 
       </CardBody>
       <CardFooter>
-        <Link to="/details">Detalhes</Link>
+        <Link to={`/details/${name}`}>Detalhes</Link>
         {showCapturarPokemon && (
           <button className="capturar" onClick={()=> addToPokedex(name)}>Capturar!</button>
           

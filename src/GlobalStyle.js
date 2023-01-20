@@ -12,7 +12,7 @@ export default createGlobalStyle`
     background: #5E5E5E;
     color: #ffffff;
     --webkit-font-smoothing: antialiased;
-    height: auto;
+    height: 100vh;
     width: 100vw;
     font-family: "Poppins", sans-serif;
   }

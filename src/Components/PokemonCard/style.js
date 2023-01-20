@@ -87,7 +87,11 @@ margin-top: -38px;
     width: 124px;
     font-size: 14px;
     font-family: "Poppins",sans-serif;
+    :hover{
+    background-color:  rgba(255, 255, 256, 0.7);
 }
+}
+
 .excluir{
     border-radius: 4px;
     border:0;
@@ -97,6 +101,9 @@ margin-top: -38px;
     font-family: "Poppins",sans-serif;
     background-color: #FF6262;
     color: white;
+    :hover{
+    background-color:  rgba(255, 99, 71, 0.6);
+}
 }
 `
 

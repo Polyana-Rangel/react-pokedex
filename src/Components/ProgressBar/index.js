@@ -1,4 +1,3 @@
-import React from 'react'
 import { ProgressBarContainer, ProgressLine } from './styles'
   
 export const ProgressBar = ({ backgroundColor, progress }) => {             

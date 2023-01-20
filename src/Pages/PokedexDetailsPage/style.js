@@ -7,58 +7,92 @@ export const CardContainerDetails = styled.div`
     justify-content:space-between;
     width:97vw;
     border-radius: 30px;
-    background-color:#729F92;
+    background-color:${props => props.backgroundColor};
     margin-top: 95px;
     margin-left: 12px;
 `
 export const Div = styled.div`
     margin-top:-5px;
-
+    background-color: #5E5E5E;
     background-image: url(${backgroundImg});
     background-size: cover;
     h1{
         padding-left:30px;
-        padding-top:30px;
-
+        padding-top:20px;
+        font-size:40px;
     }
-   
-
-
 `
 
 export const Card1 = styled.div`
-width:50%;
-display:flex;
-justify-content:space-between;
-   
+    width:50%;
+    display:flex;
+    justify-content:space-between; 
 `
 export const CardPokemomImagem = styled.div`
-img{
-    background-color:white;
-    width:18vw;
-    border-radius:8px;
-    margin-left: 24px;
-    margin-top: 12px;
-}
+    img{
+        background-color:white;
+        width:18vw;
+        border-radius:8px;
+        margin-left: 24px;
+        margin-top: 12px;
+    }
    
 `
 export const CardStats = styled.div`
-p{
+  
     background-color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: 312px;
-    height: 97%;
-    margin-top: 12px;
-    color: black;
-    font-weight:700;
-    padding-top: 18px;
-    padding-left:8px;
-    display:flex;
+        border-radius: 10px;
+        width: 312px;
+        height: 97%;
+        margin-top: 12px;
+        padding: 18px 18px 0 0;
+        display:flex;
+        flex-direction: column;
+        
+        
+       
+    
+    p {
+     
+        color: black;
+        font-weight:700;
+        font-size: 2rem;
+        margin:10px;
+       
+    }
+    
+    .progress{
+        display:flex;
+        align-items:center;
+        margin-left: 18px;
+       border-top: 1px solid #d3d3d3;
+       height:24px;
+       :last-child{
+        border-bottom:1px solid #d3d3d3;
+       }
+       strong{
+        color:black;
+        font-size:0.7rem;
+        font-weight:400;
+        margin-right: 8px;
+        
 
-}
 
-
-   
+       }
+         
+        .stats{
+            font-weight:400;
+            font-size:0.7rem;
+            color:grey;
+            width:80px;
+            /* padding:0 8px; */
+            text-align:end;
+            margin-right:8px;
+           
+        
+        }
+        
+    }
 `
 export const Card2 = styled.div`
     width:50%;
@@ -72,7 +106,7 @@ export const Card2 = styled.div`
 
    
    `
-   export const CardContainerPokemom = styled.div`
+export const CardContainerPokemom = styled.div`
  
       
       `
@@ -91,18 +125,22 @@ export const CardMoves = styled.div`
     width: 220px;
     background-color: rgb(255, 255, 255);
     height: 310px;
-    padding:  18px 8px 0;;
+    padding:  18px 8px 0;
+    text-transform: capitalize;
+
 
 p{
     
     color: black;
     font-weight:700;
+    margin-bottom:16px;
     
 
 }
  
 .moves{
-    align-self:center;
+    
+    align-self: flex-start;
     margin:3px;
     background-color:#ECECEC;
     border-radius: 30px;
@@ -116,13 +154,13 @@ p{
 }
    
    `
-   export const CardBody = styled.div`
+export const CardBody = styled.div`
        display:flex;
        justify-content:space-between;
        padding-left: 18px;
        padding-top: 20px;  
    `
-   export const CardDetails = styled.div`
+export const CardDetails = styled.div`
        display:flex;
        flex-direction:column;
    
@@ -139,11 +177,12 @@ p{
            h2 {
                font-family:"Inter", sans-serif;
                font-size: 1.6rem;
+               text-transform: capitalize;
            }
        }
      
    `
-   export const CardType = styled.div`
+export const CardType = styled.div`
    display:flex;
    width: 150px;
    margin-top: 8px;
@@ -158,7 +197,7 @@ p{
    }
      
    `
-   export const CardImage = styled.div`
+export const CardImage = styled.div`
    display:flex;
    justify-content:flex-end;
    /* padding-right:8px; */
@@ -171,10 +210,10 @@ p{
    
    .pokemon_image{
        position: absolute;
-       margin-top: -68px;
+       margin-top: -170px;
        margin-right:12px;
-       max-height: 180px;
-       max-width: 180px;
+       max-height: 300px;
+       max-width: 300px;
    }
      
 `
