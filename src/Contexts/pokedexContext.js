@@ -23,18 +23,21 @@ export const PokemonProvider = ({ children }) => {
   
     const addToPokedex = (pokemonSelectedName) => {
       const checkPokemomExists = pokemons.findIndex(
-        (element) => element.name === pokemonSelectedName
+        (element) => element === pokemonSelectedName
       );
   
       if (checkPokemomExists === -1) {
         setPokemons([...pokemons, pokemonSelectedName]);
       }
+
+      alert("Gotcha!\n O Pokémon foi adcionado a sua Pokédex" )
     };
 
     const removeToPokedex = (pokemonSelectedName) => {
       const items = pokemons.filter((pokemon) => pokemonSelectedName !== pokemon);
   
       setPokemons(items);
+      alert("Oh, no!\n O Pokémon foi removido a sua Pokédex" )
     };
   
     return (
