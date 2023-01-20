@@ -58,7 +58,7 @@ const PokedexDetailsPage = () => {
 
   return pokemon && (
     <>
-      <Header showAllPokemons showDeletePokemonBtn />
+      <Header showAllPokemons showDeletePokemonBtn pokemonName={name} />
 
       <Div >
         <h1>Detalhes</h1>
